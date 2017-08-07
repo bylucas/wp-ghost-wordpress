@@ -1,0 +1,86 @@
+// ==========================================================================
+//  Tables
+// ==========================================================================
+table {
+    border-collapse: collapse;
+    font-feature-settings: "kern", "liga", "tnum";
+    margin: $spacer 0 $spacer*2 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid shade($background, 25%);
+    font-weight: bold;
+    padding: $spacer/4;
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+td {
+    border-bottom: 1px solid shade($background, 25%);
+    padding: $spacer/4;
+    font-size: 1.4rem;
+}
+
+tr,
+td,
+th {
+    vertical-align: middle;
+}
+
+tbody tr td,
+tbody tr th {
+    transition: background-color 1.0s ease-in-out;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+    background-color: shade($light-background, 10%);
+}
+
+// CONDENSED ====================================================
+.table-condensed {
+    th,
+    td {
+        padding: 4px 5px;
+    }
+}
+
+// BORDERED ====================================================
+.table-bordered {
+    border: 1px solid $background;
+    border-left: 0;
+    border-collapse: separate;
+    th,
+    td {
+        border-left: 1px solid $background;
+    }
+    thead:first-child tr:first-child th,
+    tbody:first-child tr:first-child th,
+    tbody:first-child tr:first-child td {
+        border-top: 0;
+    }
+}
+
+// STRIPED ====================================================
+.table-striped {
+    tbody tr:nth-child(odd) td,
+    tbody tr:nth-child(odd) th {
+        background-color: tint($light-background, 20%);
+    }
+}
+
+// HEADERS CENTERED ==============================================
+.center-header {
+    th {
+        text-align: center;
+    }
+}
+
+// BODY TEXT CENTERED ==============================================
+.center-body {
+    td {
+        text-align: center;
+    }
+}

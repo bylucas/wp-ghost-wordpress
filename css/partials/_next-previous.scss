@@ -1,0 +1,150 @@
+// ==========================================================================
+//  Next-Previous - Read more
+// ==========================================================================
+.post-navigation {
+    background-color: #5b6369;
+    border-top: 1px solid rgba(51, 51, 51, 0.1);
+    font-weight: bold;
+}
+
+.post-navigation a {
+    display: block;
+    padding: 3.8461% 7.6923%;
+    text-decoration: none;
+    width: 100%;
+}
+
+.post-navigation span {
+    display: block;
+}
+
+.post-navigation .meta-nav {
+    color: #fff;
+    font-family: $headings;
+    font-size: .9rem;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    position: relative;
+    text-transform: uppercase;
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    z-index: 2;
+    display: inline-block;
+    padding: 7px 8px 5px 8px;
+}
+
+.post-navigation .post-title {
+    font-family: $headings;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 10px;
+    line-height: 1.3333;
+    position: relative;
+    z-index: 2;
+}
+
+.post-navigation .nav-next,
+.post-navigation .nav-previous {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 20px;
+    min-height: 130px;
+    text-align: center;
+}
+
+.post-navigation a:before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.post-navigation a:hover:before,
+.post-navigation a:focus:before {
+    opacity: 0.5;
+}
+
+.post-navigation a:hover span.meta-nav {
+    background: #fff;
+    color: #000;
+    border: rgba(255, 255, 255, 0.9) 1px solid;
+    transition: all 0.2s ease;
+}
+
+.post-navigation .nav-next {
+    border-top: 2px solid #2d3134;
+}
+
+.post-navigation .nav-previous {
+    border-bottom: 2px solid #2d3134;
+}
+
+@media only screen and (min-width: 767px) {
+    .post-navigation {
+        width: 100%;
+    }
+    .nav-links {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+    .nav-next,
+    .nav-previous {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        min-width: 50%;
+        text-decoration: none;
+        position: relative;
+        background-color: #5b6369;
+    }
+    .post-navigation .nav-previous {
+        border-right: 2px solid #2d3134;
+        border-bottom: none;
+    }
+    .post-navigation .nav-next {
+        border-left: 2px solid #2d3134;
+        border-top: none;
+    }
+    .post-navigation .post-title {
+        font-size: 2.4rem;
+    }
+    .post-navigation .meta-nav {
+        font-size: .9rem;
+    }
+    .post-navigation .nav-next,
+    .post-navigation .nav-previous {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .post-navigation .post-title {
+        font-size: 2.8rem;
+    }
+    .post-navigation .meta-nav {
+        font-size: 1.2rem;
+    }
+    .post-navigation .nav-next,
+    .post-navigation .nav-previous {
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+}

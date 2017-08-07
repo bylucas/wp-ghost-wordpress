@@ -1,0 +1,397 @@
+// ===================================
+//  Media Queries - Smaller than 500px
+// ===================================
+
+@media only screen and (max-width: 500px) {
+
+    #loader {
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    }
+
+
+    .main-header {
+        margin-bottom: 15px;
+        height: 40vh;
+    }
+
+    .menu-button {
+    height: 35px;
+    padding: 0 7px;
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.menu-button:before {
+    font-size: 13px;
+    margin-right: 3px;
+}
+    .main-nav {
+        padding: 15px 5px;
+        margin-bottom: 2rem;
+    }
+
+    .admin-bar .main-nav {
+    padding: 21px 5px;
+}
+   .nav-opened .menu-button {
+
+    -webkit-transform: translate3D(60px, 0, 0);
+    -ms-transform: translate3D(60px, 0, 0);
+    transform: translate3D(60px, 0, 0);
+    transition: all 0.3s ease;
+}
+   
+    .nav {
+        font-size: 16px;
+    }
+    .nav-title {
+        top: 26px;
+        left: 5px;
+        font-size: 12px;
+    }
+    .nav-close {
+        position: absolute;
+        top: 18px;
+    }
+    .custom-logo-link {
+        margin-top: 4.5rem;
+        margin-bottom: 0;
+    }
+    h1.no-custom-logo-title {
+        margin-top: $spacer;
+    }
+    .inner,
+    .pagination {
+        width: auto;
+        margin: 4rem auto;
+    }
+    .post {
+        width: auto;
+        padding-bottom: 2rem;
+        line-height: 1.65em;
+        margin: 3rem 18px 2rem 18px;
+    }
+
+    article.page {
+        width: auto;
+        padding-bottom: 2rem;
+        line-height: 1.65em;
+        margin: 3rem 18px 2rem 18px;
+    }
+    .feature {
+        font-size: 1.4rem;
+    }
+    .no-img:before {
+        position: absolute;
+        top: 2px;
+        left: -14px
+    }
+    .post-meta {
+        font-size: 1.1rem;
+        padding-top: 0;
+        line-height: 1.1rem;
+    }
+    .post-date {
+        font-size: 1.1rem;
+        margin-left: 4px;
+        padding-left: 6px;
+    }
+    .author-thumb {
+        display: none;
+    }
+    .comments-link {
+        display: none;
+    }
+    .post-template .post-header {
+        margin-bottom: 2rem;
+    }
+    .post-title {
+        text-align: center;
+    }
+    .post-template .post {
+        margin-top: 2rem;
+    }
+    hr {
+        margin: 1.75em 0;
+    }
+    p,
+    ul,
+    ol,
+    dl {
+        font-size: 0.85em;
+        margin: 0 0 2.5rem 0;
+    }
+    .page-title {
+        font-size: 3.5rem;
+    }
+    .archive-title {
+        font-size: 2.8rem;
+    }
+    .post-excerpt p {
+        font-size: 0.85em;
+    }
+    .page-description {
+        font-size: 1.8rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0 0 0.3em 0;
+    }
+    h1 {
+        font-size: 2.6rem;
+        letter-spacing: -1px;
+        padding-bottom: 0;
+    }
+    h2 {
+        font-size: 2.4rem;
+        letter-spacing: 0;
+    }
+    h3 {
+        font-size: 2.1rem;
+    }
+    h4 {
+        font-size: 1.9rem;
+    }
+    h5 {
+        font-size: 1.8rem;
+    }
+    h6 {
+        font-size: 1.8rem;
+    }
+    blockquote {
+        padding: 0 0 0 0.9em;
+    }
+    .post-content p {
+        font-size: 1.7rem;
+        line-height: 1.6;
+    }
+    body:not(.post-template) .post-title {
+        font-size: 2.1rem;
+    }
+    .post-template .site-footer {
+        margin-top: 0;
+    }
+    .post-content img {
+   
+    @include margin($spacer/1.5 auto);
+}
+
+    .post-content figure {
+   
+    @include margin($spacer/2 auto);
+}
+    
+    .page-links {
+        margin: 3rem 0;
+    }
+    .page-links span {
+        font-size: 1.3rem;
+    }
+    .post-footer {
+        padding: 5rem 0 2rem 0;
+        text-align: center;
+        .post-date {
+            clear: both;
+        }
+    }
+    .post-footer .author {
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+        border-bottom: #EBF2F6 1px dashed;
+    }
+    .post-footer .share {
+        position: static;
+        width: auto;
+        margin-bottom: 10px;
+        margin-top: 1rem;
+    }
+    .post-footer .share a {
+        margin: 1.4rem 0.8rem 0 0.8rem;
+    }
+    .author-meta {
+        margin-bottom: 0;
+    }
+    .author-meta li {
+        float: none;
+        margin: 0;
+        line-height: 1.75em;
+    }
+    .author-meta li:before {
+        display: none;
+    }
+    .author-profile {
+        padding-bottom: 2rem;
+    }
+    .post-head.main-header {
+        height: 30vh;
+    }
+    .tag-head.main-header,
+    .author-head.main-header {
+        height: 20vh;
+    }
+    .author-profile .author-image {
+        margin-top: -105px;
+    }
+    .author-profile .author-meta span {
+        font-size: 1.4rem;
+    }
+    .archive-template .main-header .page-description {
+        display: none;
+    }
+
+.author-profile .author-image {
+    width: 80px;
+    height: 80px;
+    margin: -79px auto 0 auto;
+}
+
+.author-title {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+    
+    //Site map
+    .sitemap-left,
+    .sitemap-right {
+        float: none;
+        width: 100%;
+        margin-top: $spacer;
+        h3 {
+            margin-bottom: $spacer/2.5;
+        }
+        ul {
+            margin-bottom: $spacer;
+        }
+    }
+    .sitemap-right ul {
+        margin-bottom: 0;
+    }
+
+    .sitemap-wrap {
+    margin-bottom: $spacer/2;
+}
+    .author-meta span {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .site-footer {
+        @include padding(null 12px);
+        margin-top: $spacer;
+    }
+
+    .copyright {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    .social ul li {
+        margin: 0 .2rem 0 0 !important;
+    }
+    
+    .comments-area {
+        margin-top: 0;
+        margin-bottom: 0;
+        h2.comments-title {
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            i {
+                font-size: 2.2rem;
+            }
+        }
+        .comment-list {
+            margin-bottom: 0;
+            article {
+                padding: 0.9rem;
+                footer .fn {
+                    font-size: 1.7rem;
+                }
+                .comment-content p {
+                    @include padding(null 20px);
+                }
+            }
+            .children {
+                padding-left: 0;
+            }
+        }
+        .comment-respond {
+            padding: 0;
+            background: none;
+            h3 {
+                margin-bottom: 20px;
+                font-size: 2rem;
+            }
+        }
+        .no-comments {
+            margin-bottom: 0;
+        }
+    }
+    p.comment-notes {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        span#email-notes {
+            font-size: 1.2rem;
+        }
+    }
+    .post-not-found-header {
+        padding-top: $spacer/1.3;
+        h1 {
+            font-size: 2.9rem;
+            text-shadow: 4px 3px 4px $gray;
+        }
+    }
+
+    .post-not-found-body {
+        @include padding(null $spacer/2);
+
+        p {
+            font-size: 1.8rem;
+
+        }
+        div {
+            .search-field {
+
+            }
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: $spacer/4;
+            line-height: 1.6;
+        }
+        ul {
+            li {
+                font-size: 1.5rem;
+                @include margin(5px 0);
+            }
+        }
+    }
+
+    //404 page
+.error-404 {
+padding-bottom: $spacer/3;
+    img {
+     width: 50%;
+    }
+}
+
+    .popular-post-wrap {
+        h3 {
+            margin-bottom: $spacer/1.2;
+            margin-top: $spacer;
+        }
+    }
+    .popular-post {
+        margin-bottom: $spacer;
+        margin-top: $spacer;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+} //end of query

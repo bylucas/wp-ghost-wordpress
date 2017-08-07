@@ -1,0 +1,206 @@
+// ==========================================================================
+//  Comments
+// ==========================================================================
+.comments-area {
+    $base-padding: 1.5rem;
+    $font-size: 1.9rem;
+    $big-font: $font-size*1.2;
+    $secondary: $font-size/ 1.3;
+    $third: $font-size / 1.5;
+    $comment-hover: $blue;
+    @include clearfix;
+    padding: $base-padding 0;
+    @include margin($spacer null);
+    line-height: 1.5;
+    p {
+        font-size: $secondary;
+    }
+    li {
+        margin-bottom: $spacer;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: $comment-hover;
+        }
+    }
+    h2.comments-title {
+        font-family: $headings;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: $big-font;
+        text-align: center;
+        margin-bottom: $spacer*1.5;
+        i {
+            font-size: 2.8rem;
+            vertical-align: middle;
+        }
+    } // h2
+    .comment-list {
+        padding: 1rem 0;
+        margin-bottom: $spacer;
+        .odd {
+            background: $background;
+        }
+        .even {
+            background: $light-background;
+        }
+        .depth-1 {}
+        .depth-2 {}
+        .depth-3 {}
+        .depth-4 {}
+        .depth-5 {}
+        .bypostauthor {
+            background: tint($blue, 50%);
+            .fn:after {
+                content: "\f007";
+                margin-left: 5px;
+                font-family: $icon-font;
+                font-size: $secondary;
+                color: darken($blue, 20%);
+            }
+        }
+        article {
+            padding: $spacer;
+            overflow: hidden;
+            footer {
+                float: left;
+                width: 100%;
+                font-size: $third;
+                margin-bottom: $spacer/2;
+                img {
+                    float: left;
+                    margin-right: 17px;
+                }
+                .fn {
+                    font-size: $big-font;
+                } //.fn
+                .says {
+                    color: $gray;
+                    font-size: $third;
+                }
+                time {
+                    display: block;
+                    font-size: $third;
+                    color: $gray;
+                    line-height: 1;
+                    cursor: none;
+                }
+            } // footer
+            .comment-awaiting-moderation {
+                clear: both;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .comment-content {
+                width: 100%;
+                clear: both;
+                p {
+                    margin: 0;
+                    padding-bottom: $spacer/2;
+                    color: #26292b;
+                }
+            }
+        } // article
+        .reply {
+            clear: both;
+            font-size: $third;
+            &:before {
+                content: "\f112";
+                font-family: $icon-font;
+                font-size: $third;
+                margin-right: 5px;
+                color: $comment-hover;
+            }
+        }
+        .pingback,
+        .trackback {
+            .comment-body {}
+            a {
+                font-size: $third;
+                &:hover {}
+            }
+        }
+    } //end commentlist
+    .edit-link {
+        float: right;
+        &:before {
+            content: "\f040";
+            font-family: $icon-font;
+            font-size: $third;
+            margin-right: 5px;
+        }
+    } // comment & pingback edit-link
+    // Comment form
+    .comment-respond {
+        clear: both;
+        background-color: $light-background;
+        padding: $spacer $spacer*2;
+        h3 {
+            font-family: $headings;
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-size: $big-font*1.1;
+            text-align: center;
+            margin-bottom: $spacer;
+            margin-top: 0;
+        }
+        // Cancel the comment reply
+        #cancel-comment-reply-link {
+            color: red;
+            font-size: $secondary;
+            &:hover {
+                color: $comment-hover;
+            }
+        }
+        // Your email will not be published & Required fields are marked...
+        .comment-notes {
+            span#email-notes {
+                font-style: italic;
+            }
+        }
+        .required {
+            color: #f71e3f;
+        }
+        form {
+            p {
+                clear: both;
+                margin-bottom: $spacer/2;
+            }
+            label {}
+            input[type=text],
+            input[type=email],
+            input[type=url] {}
+            textarea {
+                resize: none;
+                height: 9.4rem;
+            }
+            // logged in as user, log out
+            .logged-in-as {
+                text-align: center;
+                a {
+                    &:hover {}
+                }
+            }
+        }
+    } //end respond
+    // You must be logged in to view & post comments
+    .must-log-in {
+        text-align: center;
+        a {
+            &:hover {}
+        }
+    }
+    // no comments comments are closed
+    .no-comments {
+        text-align: center;
+        &:before {
+            content: "\f05e";
+            font-family: $icon-font;
+            font-size: $font-size;
+            color: #a41721;
+            vertical-align: center;
+        }
+    }
+} // end comment area

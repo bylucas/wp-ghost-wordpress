@@ -1,0 +1,158 @@
+// =======================
+// Menu
+// =======================
+.assistive-text,
+.screen-reader-text {
+    @include visuallyhidden;
+}
+
+.nav-menu {
+    margin-top: $spacer/2;
+    ul {
+        li {
+            position: relative;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            padding-left: 7px;
+            padding-bottom: 5px;
+            ul {
+                margin-bottom: 5px;
+                border-bottom: 1px solid white;
+                padding-bottom: 10px;
+                padding-top: 5px;
+                li {
+                    text-transform: none;
+                    padding: 3px 0 4px 7px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .menu-item-description {
+        font-size: 11px;
+        text-transform: none;
+        font-style: italic;
+        color: white;
+        width: 80%;
+    }
+}
+
+.nav-menu ul .toggled-on {
+    display: block;
+}
+
+.nav-menu ul ul {
+    display: none;
+}
+
+// High-light current page
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a,
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a {
+    color: $gray !important;
+    font-weight: bold;
+}
+
+.dropdown-toggle {
+    font-family: $icon-font;
+    background: none;
+    border: 0;
+    content: "";
+    height: 1.8rem;
+    padding: 0;
+    text-transform: lowercase;
+    @include position(absolute, 0px 0px null null);
+    width: 2rem;
+}
+
+.dropdown-toggle:after {
+    content: '\f078';
+    color: $sidebar-hover;
+    font-size: 14px;
+    @include position(relative, -8px 0px null null);
+    &:hover {
+        color: $sidebar-link;
+    }
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background: none;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.dropdown-toggle.toggle-on:after {
+    content: '\f077';
+    @include position(relative, -8px null null 0px);
+}
+
+// $background-size: 26px;
+// $background-position: 5px;
+// .nav-menu ul li.pic-1,
+// .nav-menu ul li.pic-2,
+// .nav-menu ul li.pic-3,
+// .nav-menu ul li.pic-4,
+// .nav-menu ul li.pic-5,
+// .nav-menu ul li.pic-6,
+// .nav-menu ul li.pic-7,
+// .nav-menu ul li.pic-8,
+// .nav-menu ul li.pic-9,
+// .nav-menu ul li.pic-10 {
+//     padding-left: 32px;
+// }
+
+// .pic-1 {
+//     background-image: url(../img/pic-1.png);
+//     background-repeat: no-repeat;
+//     background-size: $background-size $background-size;
+//     background-position: 0 $background-position;
+// }
+
+// .pic-2 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-2.png);
+// }
+
+// .pic-3 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-3.png);
+// }
+
+// .pic-4 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-4.png);
+// }
+
+// .pic-5 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-5.png);
+// }
+
+// .pic-6 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-6.png);
+// }
+
+// .pic-7 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-7.png);
+// }
+
+// .pic-8 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-8.png);
+// }
+
+// .pic-9 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-9.png);
+// }
+
+// .pic-10 {
+//     @extend .pic-1;
+//     background-image: url(../img/pic-10.png);
+// }

@@ -1,0 +1,25 @@
+// ========================================================
+// Theme Name: wp-ghost
+// Description: Used to style the TinyMCE editor.
+// ========================================================
+blockquote {
+    padding: 0 0 0 .8em;
+    border-left: #4A4A4A 0.25em solid;
+}
+
+.alignleft,
+.alignright,
+.aligncenter,
+.alignnone {
+    display: block;
+    float: none;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.wp-caption {
+    text-align: center;
+    dt {
+        margin-bottom: .5em;
+    }
+}

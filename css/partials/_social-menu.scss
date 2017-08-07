@@ -1,0 +1,122 @@
+// ==========================================================================
+//  Social Menu
+// ==========================================================================
+.social,
+.social-sidebar {
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            padding: 0 0.2rem;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                border-bottom: none;
+                color: lighten(#BBC7CC, 20%);
+            }
+            &:before {
+                font-family: $icon-font;
+                content: "\f1e1";
+                font-size: 2.1rem;
+            }
+        }
+    }
+    a[href*="behance.net"]:before {
+        content: "\f1b5"
+    }
+    a[href*="codepen.io"]:before {
+        content: "\f1cb";
+    }
+    a[href*="digg.com"]:before {
+        content: "\f1a6";
+    }
+    a[href*="dribbble.com"]:before {
+        content: "\f17d";
+    }
+    a[href*="dropbox.com"]:before {
+        content: "\f16b";
+    }
+    a[href*="facebook.com"]:before {
+        content: "\f082";
+    }
+    a[href*="flickr.com"]:before {
+        content: "\f16e";
+    }
+    a[href*="foursquare.com"]:before {
+        content: "\f180";
+    }
+    a[href*="plus.google.com"]:before {
+        content: "\f0d4";
+    }
+    a[href*="github.com"]:before {
+        content: "\f092";
+    }
+    a[href*="instagram.com"]:before {
+        content: "\f16d";
+    }
+    a[href*="linkedin.com"]:before {
+        content: "\f08c";
+    }
+    a[href*="pinterest.com"]:before {
+        content: "\f0d3";
+    }
+    a[href*="reddit.com"]:before {
+        content: "\f1a2";
+    }
+    a[href*="stumbleupon.com"]:before {
+        content: "\f1a4";
+    }
+    a[href*="tumblr.com"]:before {
+        content: "\f174";
+    }
+    a[href*="twitter.com"]:before {
+        content: "\f081";
+    }
+    a[href*="vimeo.com"]:before {
+        content: "\f194";
+    }
+    a[href*="wordpress.com"]:before,
+    a[href*="wordpress.org"]:before {
+        content: "\f19a";
+    }
+    a[href*="youtube.com"]:before {
+        content: "\f166";
+    }
+    a[href*="mailto:"]:before {
+        content: "\f199";
+    }
+    a[href*="spotify.com"]:before {
+        content: "\f1bc";
+    }
+    a[href*="twitch.tv"]:before {
+        content: "\f1e8";
+    }
+    a[href*="path.com"]:before {
+        content: "\f20c";
+    }
+    a[href*="skype.com"]:before {
+        content: "\f17e";
+    }
+}
+
+.social {
+    display: block;
+    float: right;
+}
+
+.social-sidebar {
+    clear: both;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    a {
+        color: #BBC7CC;
+    }
+}
+
+.site-footer .social ul {
+    margin-bottom: 0;
+}

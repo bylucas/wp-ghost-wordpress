@@ -1,0 +1,1 @@
+!function($){var n=wp.customize;n("blogname",function(n){n.bind(function(n){$(".page-title a").text(n)})}),n("blogdescription",function(n){n.bind(function(n){$(".page-description").text(n)})})}(jQuery);

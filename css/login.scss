@@ -1,0 +1,52 @@
+// ========================================================
+// LOGIN STYLESHEET
+// Change the Starter login to your own
+// ========================================================
+@import "bourbon";
+@import "variables";
+#login {
+    h1 a {
+        background: url("../img/login-screen.png") no-repeat top center;
+        width: 326px;
+        height: 67px;
+        background-size: 100%;
+        padding-bottom: 0.625rem;
+    }
+    p {
+        font-family: $headings;
+    }
+    form {
+        width: auto;
+        padding: $spacer/1.5 $spacer;
+        border-radius: $medium-radius;
+        box-shadow: none;
+        label {
+            font-size: 14px;
+        }
+        .input {
+            margin-bottom: $spacer/2;
+            margin-top: 5px;
+            border-radius: $medium-radius;
+            font-size: 13px;
+            padding: 6px 7px;
+        }
+        .button {
+            background-color:
+            $button-background-color;
+            border:none;
+            color: #fff;
+            font-size: 12px;
+            box-shadow: none;
+            text-shadow: none;
+            &:hover {
+                outline:none;
+                background: lighten($button-background-color, 20%);
+                color: darken(#fff, 20%);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    #nav {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,59 @@
+/******************************************************************
+Theme Name: wp-ghost
+Theme URI: https://github.com/bylucas/wp-ghost
+Author: Howardl
+Author URI: https://howardl.io/
+Description: A simple blogging theme based on the popular Ghost blogging platform. Very user friendly with all development files left in place for further development.
+Version: 1.0
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, custom-background, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: ghost
+/******************************************************************/
+
+/*Place your user styles below*/
+
+/*navigation icons - set the path to your icons - make the icons 100px x 100px - use classes 'pic-1' to 'pic-4' to see ghost icons */
+
+/*Detailed explaination - At the moment if you add classes 'pic-1', 'pic-2' etc to the main navigation menu css classes section (you may have to enable 'css classes' via 'Screen Options'), you will see default icons loaded from the theme image folder.
+
+To set your own icons, save your icons to a folder (use any image format), and change the path to your images. Set a nice big image for 2x devices. It is easier if you name your icons 'pic-1', 'pic-2' etc, if not make sure you change the styles below to suit your image. You may have to alter size and position to match your icons. Ideal size 100px x 100px. If you have a problem viewing your new styles try 'clearing the browser data'.
+
+Use this stylesheet to alter/add all your new styles.*/
+
+/* The development files are still in place if you wish to use the Scss files to make your changes. The navigation section below does not appear in the development files*/
+
+.nav-menu ul li.pic-1,
+.nav-menu ul li.pic-2,
+.nav-menu ul li.pic-3,
+.nav-menu ul li.pic-4 {
+    padding-left: 32px;
+}
+
+.pic-1 {
+    background-image: url(img/pic-1.png);
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    background-position: 0 5px;
+}
+
+.pic-2 {
+    background-image: url(img/pic-2.png);
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    background-position: 0 5px;
+}
+
+.pic-3 {
+    background-image: url(img/pic-3.png);
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    background-position: 0 5px;
+}
+
+.pic-4 {
+    background-image: url(img/pic-4.png);
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    background-position: 0 5px;
+}

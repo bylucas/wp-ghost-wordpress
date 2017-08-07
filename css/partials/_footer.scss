@@ -1,0 +1,28 @@
+// ==========================================================================
+//  Footer
+// ==========================================================================
+.site-footer {
+    margin: 0;
+    padding: 10px 20px 0 20px;
+    font-family: $headings;
+    font-size: 1rem;
+    color: #BBC7CC;
+    background: $black;
+}
+
+.site-footer a {
+    color: #BBC7CC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    border-bottom: #bbc7cc 1px solid;
+}
+
+.copyright {
+    display: block;
+    width: 45%;
+    float: left;
+    margin-top: 4px;
+}

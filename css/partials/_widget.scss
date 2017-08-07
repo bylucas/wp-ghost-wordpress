@@ -1,0 +1,122 @@
+// ==========================================================================
+//  Widgets
+// ==========================================================================
+//SiteMap link under main nav
+.sitemap-link {
+    clear: both;
+    margin-top: $spacer/2;
+    text-align: center;
+    color: $sidebar-hover;
+    font-family: $headings;
+    font-size: 1.2rem;
+    a {
+        color: $sidebar-link;
+        text-decoration: none;
+        &:hover {
+            color: $sidebar-hover;
+        }
+    }
+}
+
+.widget {
+    @include clearfix;
+    padding: 0 10px;
+    margin-top: $spacer/2;
+    margin-bottom: $spacer;
+    color: $white;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    h4 {
+        color: $white;
+        font-size: 14px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-top: 0;
+    }
+    ul {
+        margin-top: 10px;
+        li {
+            margin-bottom: 0.7rem;
+        }
+    }
+}
+
+.calendar_wrap {
+    @include clearfix;
+    overflow: hidden;
+    background: #bbc4c3;
+    border-radius: $medium-radius;
+    margin-top: 20px;
+    table {
+        margin: 0;
+        padding-top: 10px;
+        width: 100%;
+    }
+    caption {
+        color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        margin-top: 10px;
+    }
+    table td {
+        padding: 6px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #8c8790;
+    }
+    table th {
+        color: $black;
+        font-size: 13px;
+        text-align: center;
+    }
+    table tr {
+        color: $gray;
+    }
+    table tbody > tr:nth-child(odd) > td,
+    table tbody > tr:nth-child(odd) > th {
+        background: #dedeff;
+    }
+    table tfoot td {
+        border: none;
+    }
+}
+
+// text widget
+.widget_text {
+    p {
+        color: $white;
+        margin-bottom: 10px;
+    }
+}
+
+.widget .post-date {
+    font-size: 11px;
+    margin-top: 0;
+    padding-left: 0;
+    border-left: none;
+}
+
+.widget_archive li,
+.widget_categories li {
+    font-size: 11px;
+    a {
+        font-size: 12px;
+    }
+}
+
+.widget_search {
+    margin-bottom: $spacer/2;
+    input {
+        width: auto;
+    }
+}
+
+.widget_nav_menu li {
+    background: none;
+}

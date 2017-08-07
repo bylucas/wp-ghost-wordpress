@@ -1,0 +1,87 @@
+// ==========================================================================
+//  Pagination
+// ==========================================================================
+// Pagination
+.pagination {
+    text-align: center;
+    margin-bottom: 7rem;
+    .nav-links {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .prev,
+        .next,
+        .page-numbers {
+            display: inline;
+            font-family: $headings;
+            font-size: 1.2rem;
+            background: $black;
+            border-radius: $small-radius;
+            border: 1px solid $gray;
+            padding: 4px 12px;
+            transition: all 0.2s ease-in-out;
+            color: $white;
+            outline: none;
+            text-decoration: none;
+            &:hover,
+            &:focus {
+                background: tint($black, 30%);
+            }
+            &:active {
+                background: tint($black, 10%);
+            }
+        }
+        .prev:before {
+            font-family: $icon-font;
+            content: "\f177";
+            margin-right: .45rem;
+        }
+        .next:after {
+            font-family: $icon-font;
+            content: "\f178";
+            margin-left: .45rem;
+        }
+        .current {
+            background: tint($black, 50%);
+            color: #fff;
+            cursor: default;
+            &:hover,
+            &:focus,
+            &:active {
+                background: tint($black, 50%);
+            }
+        }
+    }
+}
+
+// PAGE LINKS
+// Page and Post Navigation use <!--nextpage--> on your post/page in text mode
+.page-links {
+    margin: $spacer*2 0;
+    text-align: center;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    span {
+        display: inline-block;
+        font-size: 22px;
+        padding-bottom: 12px;
+        color: $white;
+        border: 1px solid $gray;
+        border-radius: $small-radius;
+        text-decoration: none;
+        width: 4px;
+        height: 3px;
+        @include margin(null 5px);
+        background: shade($blue, 50%);
+    }
+    a span {
+        background: $blue;
+        color: $black;
+        &:hover,
+        &:focus {
+            color: $white;
+            background: shade($blue, 30%);
+        }
+    }
+}

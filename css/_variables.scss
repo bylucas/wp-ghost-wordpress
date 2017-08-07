@@ -1,0 +1,72 @@
+// Variables
+//colors
+$black: rgba(0, 0, 0, .9);
+$white: #fff;
+$gray: #7f7f7f;
+$blue: #6e99c5;
+$icon-font: 'FontAwesome';
+$headings: "merriweather_sans",
+sans-serif;
+$font: "Bookerly",
+serif;
+$code-font: "sourcecode",
+Inconsolata,
+sans-serif;
+//Measurments
+$spacer: 48px;
+// =======================
+// Form Elements
+// =======================
+$button-background-color: $black;
+// =======================
+// Links
+// =======================
+$link-color: $black;
+$visited-color: $link-color;
+$hover-color: lighten($link-color, 20%);
+$sidebar-link: #267bf5;
+$sidebar-hover: $white;
+// =======================
+// background and border
+// =======================
+// background color
+$background: rgb(220, 220, 220);
+$light-background: lighten($background, 12%);
+// =======================
+// Radius
+// =======================
+$small-radius: 5px;
+$medium-radius: 8px;
+// =======================
+// Mixins
+// =======================
+// @include visuallyhidden;
+@mixin visuallyhidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    // Make visuallyhidden focusable with a keyboard
+    &.focusable {
+        &:active,
+        &:focus {
+            position: static;
+            clip: auto;
+            height: auto;
+            width: auto;
+            margin: 0;
+            overflow: visible;
+        }
+    }
+}
+
+// set border-box everything
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}

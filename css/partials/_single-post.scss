@@ -1,0 +1,236 @@
+// ==========================================================================
+//  Single Post Page
+// ==========================================================================
+.post-template .post-header {
+    margin-bottom: 3.4rem;
+}
+
+.post-template .post-title {
+    margin-bottom: 0;
+}
+
+.post-template .post-meta {
+    padding-top: 5px;
+}
+
+
+/* Stop elements, such as img wider than the post content, from
+   creating horizontal scroll - slight hack due to imperfections
+   with browser width % calculations and rounding */
+
+.post-template .content {
+    overflow: hidden;
+}
+
+
+/* Tweak the .post wrapper style */
+
+.post-template .post {
+    margin-top: 3.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+/* Kill that stylish little circle that was on the border, too */
+
+.post-template .post:after {
+    display: none;
+}
+
+.post-content a {
+    color: $black;
+    text-decoration: none;
+    border-bottom: 2px solid $background;
+
+    &:hover {
+       border-bottom: none;
+       color: lighten($black, 50%);
+    }
+}
+
+.post-content p {
+    font-size: 1.9rem;
+    line-height: 1.8;
+    color: #40494e;
+}
+
+
+/* Keep images centered */
+
+.post-content img {
+    display: block;
+    @include margin($spacer*1.5 auto);
+    border: 2px solid lighten($gray, 30%);
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.post-content figure {
+    max-width: 100%;
+    @include margin($spacer*1.5 0 $spacer 0);
+    img {
+        @include margin(0 null 10px null);
+    }
+}
+
+.no-list-style {
+    list-style: none;
+    padding-left: 0;
+}
+
+.post-ending {
+    text-align: center;
+    i {
+        font-size: 1.1rem;
+        margin-left: 1%;
+        margin-right: 1%;
+        color: tint($black, 70%);
+    }
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+// footnotes are based on what Marked2 generates when exporting Markdown to html
+a.citation {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+    left: 3px;
+    text-decoration: none;
+}
+
+.footnotes {
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+
+.footnotes li {
+    margin: 0.6rem 0;
+}
+
+.footnotes p {
+    margin: 0;
+}
+
+.footnotes ol li a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footnote {
+    font-size: 85%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+    text-decoration: none;
+}
+
+
+/* The author credit area after the post */
+
+.post-footer {
+    position: relative;
+    margin: 6rem 0 0 0;
+    padding: 6rem 0 0 0;
+    border-top: #EBF2F6 1px solid;
+}
+
+.post-footer h4 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.post-footer p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px solid $background;
+
+        &:hover {
+            border-bottom: none;
+        }
+    }
+}
+
+
+/* list of author links - location / url */
+
+.author-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+}
+
+.author-meta a {
+    color: #9EABB3;
+}
+
+.author-meta a:hover {
+    color: #111;
+}
+
+
+/* Create some space to the right for the share links */
+
+.post-footer .author {
+    margin-right: 180px;
+}
+
+.post-footer h4 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h4 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Drop the share links in the space to the right.
+   Doing it like this means it's easier for the author bio
+   to be flexible at smaller screen sizes while the share
+   links remain at a fixed width the whole time */
+
+.post-footer .share {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 140px;
+}
+
+.post-footer .share a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 1rem 1.6rem 1.6rem 0;
+    color: #BBC7CC;
+    text-decoration: none;
+}
+
+.post-footer .share .icon-twitter:hover {
+    color: #55acee;
+}
+
+.post-footer .share .icon-facebook:hover {
+    color: #3b5998;
+}
+
+.post-footer .share .icon-google-plus:hover {
+    color: #dd4b39;
+}

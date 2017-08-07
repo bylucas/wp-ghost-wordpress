@@ -1,0 +1,39 @@
+// ==========================================================================
+//  Comment Navigation
+// ==========================================================================
+.comment-navigation {
+    font-size: 1.4rem;
+    margin-bottom: $spacer*3.8;
+    a {
+        &:hover,
+        &:focus {}
+    }
+    .comment-nav-links {
+        @include padding(null 10px);
+    }
+    .comment-prev,
+    .comment-next {
+        a {
+            color: $black;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    .comment-prev {
+        float: left;
+        :before {
+            font-family: $icon-font;
+            content: "\f177";
+            margin-right: 0.4rem;
+        }
+    }
+    .comment-next {
+        float: right;
+        :after {
+            font-family: $icon-font;
+            content: "\f178";
+            margin-left: 0.4em;
+        }
+    }
+}

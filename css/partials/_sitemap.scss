@@ -1,0 +1,43 @@
+// ==========================================================================
+//  Sitemap
+// ==========================================================================
+.sitemap-para {
+    margin-bottom: 0;
+}
+
+.sitemap-wrap {
+    margin-bottom: $spacer;
+}
+
+.sitemap-left,
+.sitemap-right {
+    text-align: center;
+    h3 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 0;
+        li {
+            color: $black;
+            font-size: 1.4rem;
+            @include margin(0 null);
+            a {
+                color: $link-color;
+            }
+        }
+    }
+}
+
+.sitemap-left {
+    float: left;
+    width: 40%;
+}
+
+.sitemap-right {
+    float: right;
+    width: 60%;
+}
