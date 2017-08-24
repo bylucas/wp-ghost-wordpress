@@ -1623,8 +1623,9 @@ tbody tr:hover th {
 
 figcaption {
   text-align: center;
-  font-size: 1.4rem;
-  font-style: italic; }
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 2rem; }
 
 a.citation {
   font-size: 75%;
