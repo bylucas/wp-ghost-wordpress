@@ -142,4 +142,8 @@ The post content is 710px wide
 If you have any problems or find bad code please let me know. It would be much appreciated.<br>
 [email me](mailto:howard@howardl.co.uk) or [Use the Contact Form](https://goo.gl/forms/nqkL70178cFAk0nt1)
 
+### And Finally
+
 Download the latest _wp-ghost_ theme version from [here](https://github.com/bylucas/ghost-wordpress)
+
+View _wp-ghost_ and more information [here](https://howardl.uk/themes/wp-ghost-wordpress-theme/)

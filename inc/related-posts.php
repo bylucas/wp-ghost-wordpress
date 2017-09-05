@@ -24,7 +24,7 @@ echo '<div class="popular-post-wrap">';
             the_post_thumbnail('related');
             
             } else { ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/popular-post.jpg" alt="popular post temp image" />
+            <img src="<?php echo get_template_directory_uri(); ?>/img/popular-post.png" alt="popular post temp image" />
             <?php } ?>
         </a>
         <h4><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>

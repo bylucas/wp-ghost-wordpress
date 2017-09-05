@@ -146,38 +146,91 @@
 .popular-post-wrap {
     @include clearfix;
     width: 100%;
+        
+        h3 {
+            margin-bottom: $spacer/2;
+            margin-top: $spacer/2;
+            letter-spacing: 2px;
+            text-align: center;
+            font-size: 2.6rem;
+            font-style: italic;
+        }
+}
+
+.popular-post {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $spacer;
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: $spacer/4;
+            border: 1px solid $black;
+        }
+}
+//At 600px
+@media only screen and (min-width: 600px) {
+.popular-post-wrap {
     h3 {
-        text-align: center;
-        width: 100%;
-        font-family: $headings;
-        letter-spacing: 3px;
-        font-size: 2.1rem;
-        margin-bottom: $spacer/1.5;
+        //margin-top: $spacer/2;
+        font-size: 3rem;
+    }
+    }
+    
+.popular-post {
+    //margin-bottom: $spacer;
+    margin-top: $spacer/2;
+
+        h4 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+}
+}//end 600 query
+
+//At 768px
+@media only screen and (min-width: 768px) {
+.popular-post-wrap {
+    
+    h3 {
+        font-size: 2.8rem;
+        //margin: 0;
     }
 }
 
 .popular-post {
-    margin-bottom: $spacer/4;
-    display: inline-block;
-    width: 32%;
-    &:nth-child(3) {
-        @include margin(null 10px);
-    }
+    float: left;
+    width: calc(30%);
+    margin-left: 20px;
+    padding-bottom: $spacer/4;
+    border: 1px solid $black;
+
     img {
-        max-width: 100%;
-        height: auto;
-        border: 1px solid $gray;
+            margin-bottom: 0;
+        }
+    
+    h4 {
+        font-size: 1.6rem;
+    }
+}
+}//end 768 query
+
+//At 900
+@media only screen and (min-width: 900px) {
+.popular-post {
+
+  img {
         &:hover,
         &:focus {
             opacity: .75;
         }
     }
-    h4 {
-        text-align: center;
-        font-size: 14px;
-        margin-top: 0;
-    }
 }
+}//end 900 query
+
+
 
 .sidebar-ending {
     text-align: center;
