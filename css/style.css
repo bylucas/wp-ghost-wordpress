@@ -1691,7 +1691,7 @@ a.citation {
   margin: 0; }
 
 .post-footer p {
-  margin: 1rem 0;
+  margin: 0;
   font-size: 1.4rem;
   line-height: 1.75em; }
   .post-footer p a {
@@ -1719,6 +1719,11 @@ a.citation {
 /* Create some space to the right for the share links */
 .post-footer .author {
   margin-right: 180px; }
+  .post-footer .author h3 {
+    font-size: 1.9rem;
+    margin-top: 0; }
+  .post-footer .author a {
+    font-size: 1.3rem; }
 
 .post-footer h4 a {
   color: #2e2e2e;
@@ -2183,6 +2188,8 @@ a.citation {
         color: #6e99c5; }
     .comments-area .comment-respond .comment-notes span#email-notes {
       font-style: italic; }
+    .comments-area .comment-respond .comment-notes span {
+      color: #7f7f7f; }
     .comments-area .comment-respond .required {
       color: #f71e3f; }
     .comments-area .comment-respond form p {

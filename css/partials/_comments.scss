@@ -158,6 +158,11 @@
         .comment-notes {
             span#email-notes {
                 font-style: italic;
+                
+            }
+
+            span {
+               color: $gray; 
             }
         }
         .required {

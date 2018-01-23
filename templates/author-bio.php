@@ -11,14 +11,12 @@
         echo get_avatar( get_the_author_meta( 'user_email' ), $author_bio_avatar_size ); ?>
     </figure>
     <section class="author">
-        <h4><?php echo get_the_author(); ?></h4>
-        <p>
+        <h3><?php echo get_the_author(); ?></h3>
             <?php the_author_meta( 'description' ); ?>
             
             <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
                 <?php printf( __( 'View all posts by %s', 'ghost' ), get_the_author() ); ?>
             </a>
-        </p>
         
         <div class="author-meta">
             <span class="author-location icon-location"><?php the_author_meta( 'area_profile' ); ?></span>

@@ -152,7 +152,7 @@ a.citation {
 }
 
 .post-footer p {
-    margin: 1rem 0;
+    margin: 0;
     font-size: 1.4rem;
     line-height: 1.75em;
 
@@ -192,6 +192,16 @@ a.citation {
 
 .post-footer .author {
     margin-right: 180px;
+
+    h3 {
+        font-size: 1.9rem;
+        margin-top: 0;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+
 }
 
 .post-footer h4 a {
