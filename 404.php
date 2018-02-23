@@ -13,6 +13,7 @@ get_header(); ?>
         <?php _e( 'That page can&rsquo;t be found', 'ghost' ); ?>
         </h1>
     </header>
+</section>
     <section class="post-not-found-body">
         <p>
             <?php _e( 'Apologies, but no results were found. Perhaps another search will help or see the latest Articles below...', 'ghost' ); ?>
