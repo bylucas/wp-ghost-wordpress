@@ -9,7 +9,7 @@ A _no thrills_, _down to earth_ theme based on the **Casper** theme from the pop
 Although the theme is ready to use, the development files are still in place, _eg scss files_ for you to alter to make the theme to your liking.
 
 ### Theme Preview
-[howardl.uk](https://howardl.uk) uses __wp-ghost__ via a _child theme_
+Not available at the moment
 
 ### Custom CSS
 
@@ -140,10 +140,10 @@ The post content is 710px wide
 ### Problems
 
 If you have any problems or find bad code please let me know. It would be much appreciated.<br>
-[email me](mailto:howard@howardl.co.uk) or [Use the Contact Form](https://goo.gl/forms/nqkL70178cFAk0nt1)
+[email me](mailto:howard@howardlucas.io)
 
 ### And Finally
 
 Download the latest _wp-ghost_ theme version from [here](https://github.com/bylucas/ghost-wordpress)
 
-View _wp-ghost_ and more information [here](https://howardl.uk/themes/wp-ghost-wordpress-theme/)
+View _wp-ghost_ and more information - not at the moment
