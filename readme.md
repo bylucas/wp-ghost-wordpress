@@ -144,6 +144,6 @@ If you have any problems or find bad code please let me know. It would be much a
 
 ### And Finally
 
-Download the latest _wp-ghost_ theme version from [here](https://github.com/bylucas/ghost-wordpress)
+Download the latest _wp-ghost_ theme version from [here](https://github.com/bylucas/wp-ghost-wordpress)
 
 View _wp-ghost_ and more information - not at the moment
