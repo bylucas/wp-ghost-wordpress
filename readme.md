@@ -9,7 +9,7 @@ A _no thrills_, _down to earth_ theme based on the **Casper** theme from the pop
 Although the theme is ready to use, the development files are still in place, _eg scss files_ for you to alter to make the theme to your liking.
 
 ### Theme Preview
-Not available at the moment
+The theme is no longer supported
 
 ### Custom CSS
 
@@ -140,7 +140,7 @@ The post content is 710px wide
 ### Problems
 
 If you have any problems or find bad code please let me know. It would be much appreciated.<br>
-[email me](mailto:howard@howardlucas.io)
+[email me](mailto:howard@how59.com)
 
 ### And Finally
 
